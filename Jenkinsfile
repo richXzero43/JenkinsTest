@@ -15,9 +15,12 @@ stage('Say Hello World') {
   println 'Hello World'
 }
 
+sayHello 'Joe'
+sayHello() /* invoke with default arguments */
+
 // Try and use a src lib:
 
 def c = new utils()
 c.hello()
-c.runcommand("df -h")
+c.runCommand("df -h")
 

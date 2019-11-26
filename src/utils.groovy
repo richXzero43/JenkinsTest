@@ -1,4 +1,4 @@
-def runcommand(String cmd) {
+def runCommand(String cmd) {
   sh ${cmd}
 }
 
