@@ -1,7 +1,7 @@
-def runcommand(cmd) {
+def runcommand(String cmd) {
   sh ${cmd}
 }
 
-def hello(){
+def hello() {
   echo "Hello!!!!!!"
 }
