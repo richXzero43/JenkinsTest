@@ -1,4 +1,7 @@
 
+// This calls vars/tools.groovy, which is in the JenkinsTest git repository.
+// It's defined as a Global Library in Jenkins. (Manage Jenkins/Configure System)
+
 tools.info 'Starting'
 tools.warning 'Nothing to do!'
 
@@ -11,4 +14,9 @@ def stage(String label, Closure cl) {
 stage('Say Hello World') {
   println 'Hello World'
 }
+
+// Try and use a src lib:
+
+def c = new utils()
+c.runcommand("df -h")
 
