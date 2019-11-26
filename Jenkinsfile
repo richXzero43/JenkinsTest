@@ -1,5 +1,5 @@
-node {
-  def commands() {
-    sh "df -h > /tmp/commands.out"
-  }
-}
+def rootDir = pwd()
+def tools = load "${rootDir}\\patchBuildTools.groovy"
+mainMethod() {
+    echo "hello world from Closure"
+}    
