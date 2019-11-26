@@ -22,5 +22,5 @@ tools() /* invoke with default arguments */
 
 def c = new utils()
 c.hello()
-c.runCommand("df -h")
+c.runCommand()
 

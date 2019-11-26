@@ -1,5 +1,5 @@
-def runCommand(String cmd) {
-  sh ${cmd}
+def runCommand() {
+  sh "df -h"
 }
 
 def hello() {
