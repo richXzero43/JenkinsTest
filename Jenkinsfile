@@ -18,5 +18,6 @@ stage('Say Hello World') {
 // Try and use a src lib:
 
 def c = new utils()
+c.hello()
 c.runcommand("df -h")
 
