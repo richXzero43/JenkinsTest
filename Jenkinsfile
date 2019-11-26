@@ -15,8 +15,8 @@ stage('Say Hello World') {
   println 'Hello World'
 }
 
-sayHello 'Joe'
-sayHello() /* invoke with default arguments */
+tools 'Joe'
+tools() /* invoke with default arguments */
 
 // Try and use a src lib:
 
