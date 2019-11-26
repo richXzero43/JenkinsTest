@@ -1,9 +1,11 @@
-def makeStage = {
-  stage('a') {
-    echo 'Hello World'
-  }
+
+
+def stage(String label, Closure cl) {
+  println "The stage is ${label}"
+  cl()
+  println "Exiting the stage"
 }
 
-node {
-    makeStage()
+stage('Say Hello World') {
+  println 'Hello World'
 }
