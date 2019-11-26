@@ -1,4 +1,6 @@
 
+tools.info 'Starting'
+tools.warning 'Nothing to do!'
 
 def stage(String label, Closure cl) {
   println "The stage is ${label}"
@@ -9,3 +11,4 @@ def stage(String label, Closure cl) {
 stage('Say Hello World') {
   println 'Hello World'
 }
+
