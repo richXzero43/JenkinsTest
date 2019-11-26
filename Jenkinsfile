@@ -1,3 +1,9 @@
-def rootDir = pwd()
-def tools = load "${rootDir}\\vars\tools.groovy"
-mainMethod(tools.testCl("hello"))
+def makeStage = {
+  stage('a') {
+    echo 'Hello World'
+  }
+}
+
+node {
+    makeStage()
+}
