@@ -1,0 +1,22 @@
+pipeline {
+	agent any
+
+    environment {
+	    SOME_NUMBER = 123
+	    SOME_STRING = "foobar"
+    }
+
+    stages {
+        stage("Build") {
+            steps {
+                sh "ls -"
+                sh(script: 'date +%Y-%m-%d', returnStdout: false)
+                echo "Groovy rocks!"
+            }
+        }
+        stage("Test") {
+            steps {
+            echo "Testing"
+            }
+        }
+    }
